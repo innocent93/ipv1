@@ -1,0 +1,21 @@
+const mongoose = require('mongoose');
+const softDeletePlugin = require('../plugins/softDelete');
+
+const partnerSchema = new mongoose.Schema({
+  name: { type: String, required: true, trim: true },
+  logo: { type: String, required: true },
+  website: { type: String, default: '' },
+  description: { type: String, default: '' },
+  category: { 
+    type: String, 
+    enum: ['regulatory', 'industry', 'international', 'academic'],
+    default: 'industry',
+    index: true
+  },
+  isActive: { type: Boolean, default: true, index: true },
+  order: { type: Number, default: 0 },
+}, { timestamps: true });
+
+schema.plugin(softDeletePlugin);
+
+module.exports = mongoose.model('Partner', partnerSchema);

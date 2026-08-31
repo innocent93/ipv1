@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0B1830" rx="64"/>
+  <text x="256" y="220" font-family="Arial, sans-serif" font-size="120" font-weight="bold" fill="#F5A623" text-anchor="middle">IPMC</text>
+  <text x="256" y="300" font-family="Arial, sans-serif" font-size="36" fill="#ffffff" text-anchor="middle">NIGERIA</text>
+  <rect x="96" y="340" width="320" height="4" fill="#F5A623"/>
+</svg>
