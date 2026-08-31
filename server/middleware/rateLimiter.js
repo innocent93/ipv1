@@ -1,5 +1,5 @@
 const rateLimit = require('express-rate-limit');
-const logger = require('./logger');
+const logger = require('../utils/logger');
 
 // General API rate limiter
 exports.apiLimiter = rateLimit({
